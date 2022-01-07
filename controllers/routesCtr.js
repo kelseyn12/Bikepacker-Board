@@ -15,6 +15,14 @@ const routeSeed = require('../models/routeSeed');
 
 
 //INDEX//
+routesRouter.get('/', (req, res) => {
+    // res.send('index');
+    Route.find({}, (error, allRoutes) => {
+        res.render('index.ejs', {
+            routes: allRoutes,
+        });
+    });
+});
 
 //NEW//
 

@@ -37,14 +37,14 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(methodOverride("_method"));
 app.use('/public', express.static('public'));
-// app.use("/routes/", routesController);
+app.use("/routes/", routesController);
 
 //ROUTES//
 app.get('/', (req, res) => {
     res.redirect('/routes')
 });
 
-// app.use('/routes', routesController);
+app.use('/routes', routesController);
 
 /*=============================
         Catch URL Mistakes
