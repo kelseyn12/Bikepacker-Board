@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/header') %>  
+    <ul>
+        <% routes.forEach(route => { %>
+            <li>
+                <a href="/routes/<%=route._id; %>"> <%=route.name; %> <img src="<%=route.img; %>"> </a>
+            </li>
+       <% }) %>
+    </ul>
+    
+</body>
+</html>

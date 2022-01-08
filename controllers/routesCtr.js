@@ -11,7 +11,12 @@ const routeSeed = require('../models/routeSeed');
 ========================*/
 
 //SEED//
-
+routesRouter.get('/seed', (req, res) => {
+    Route.deleteMany({}, (error, allRoutes) => {});
+        Route.create(routeSeed, (error, data)=> {
+            res.redirect('/routes');
+        });
+    });
 
 
 //INDEX//
