@@ -41,7 +41,14 @@ routesRouter.get('/', (req, res) => {
 //EDIT//
 
 //SHOW//
-
+routesRouter.get('/:id', (req, res) => {
+    Route.findById(req.params.id, (error, foundRoute) => {
+        // res.send(foundRoute);
+        res.render('show.ejs', {
+            route: foundRoute,
+        });
+    });
+});
 
 
 

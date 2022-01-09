@@ -1,7 +1,7 @@
 module.exports = [
     {
         name: 'Northwoods Route',
-        img: 'https://www.bikepackingroots.org/uploads/5/1/0/1/51015789/northwoods-photo1_orig.jpg',
+        img: 'https://www.bikepackingroots.org/uploads/5/1/0/1/51015789/stafki-north-shore-1.jpg',
         description: 'Primarily following gravel roads, relatively smooth two-tracks, rail trails, and short sections of pavement through thick forests and along countless lakes of all sizes. This route circumnavigates the western half of Lake Superior.',
         difficulty: '5/10',
         days: '9-12+',
@@ -10,7 +10,7 @@ module.exports = [
         additionalInfo: 'https://www.bikepackingroots.org/northwoodsroute.html'
     }, {
         name: 'Staddle and Paddle',
-        img: 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle_main-1200x800.jpg',
+        img: ['https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle_main-1200x800.jpg', 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle-minnesota_11.jpg', 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle-minnesota_19.jpg', 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle-minnesota_27.jpg', 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle-minnesota_29.jpg', 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle-minnesota_37.jpg',  ],
         description: 'Traverse through the north shore of Lake Superior and the Boundary Waters Canoe Area.',
         difficulty: '3/10',
         days: '3-4',
