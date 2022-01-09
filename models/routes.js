@@ -8,6 +8,8 @@ const routesSchema = new Schema({
     difficulty: { type: String },
     days: { type: String },
     distance: {type: String },
+    contributor: {type: String },
+    additionalInfo: {type: String },
 });
 
 module.exports = mongoose.model('Routes', routesSchema)
