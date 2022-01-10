@@ -30,15 +30,24 @@ routesRouter.get('/', (req, res) => {
 });
 
 //NEW//
-
+routesRouter.get('/new', (req, res) => {
+    res.render('new.ejs')
+});
 //DELETE//
 
 //UPDATE//
 
 
 //CREATE//
-
+routesRouter.post('/', (req,res) => {
+    // console.log(req.body);
+    // res.send('received');
+Route.create(req.body, (error, product) => {
+    res.redirect('/routes');
+    });
+});
 //EDIT//
+
 
 //SHOW//
 routesRouter.get('/:id', (req, res) => {
