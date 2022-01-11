@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/header') %>
+        <h1>Edit Route</h1>
+    <form action="/routes/<%=route._id%>?_method=PUT" method="POST">
+        Name: <input type="text" name="name" value="<%=route.name%>" required /><br />
+        Image Link: <input type="text" name="img" value="<%=route.img%>" required /><br />
+        Description: <input type="textarea" name="description" value="<%=route.description%>" required /><br />
+        Days: <input type="text" name="days" value="<%=route.days%>" required /><br />
+        Distance: <input type="text" name="distance" value="<%=route.distance%>" required /><br />
+        Contributor: <input type="text" name="contributor" value="<%=route.contributor%>" required /><br />
+        Additional Info: <input type="text" name="additionalInfo" value="<%=route.additionalInfo%>" required /><br />
+        <input type="submit" value="Submit Changes">
+    </form>
+</body>
+</html>

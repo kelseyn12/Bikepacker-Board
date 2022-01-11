@@ -1,6 +1,23 @@
-img {
-    width:50%;
-    padding: 0px;
-    margin: 0px;
 
+header > h1 {
+    display: flex;
+    justify-content: center;
+}
+header > nav {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 16px;
+    
+}
+
+
+div.gallery-holder {
+
+    display:flex;
+    flex-flow: row wrap;
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    overflow: hidden;
+    position: relative;
 }
