@@ -1,10 +1,22 @@
+body {
+    margin: 0;
+}
+header {
+    padding: 30px;
+    margin: 0px;
+    background: rgb(225, 230, 233);
+    
+}
 header > h1 {
     display: flex;
     justify-content: center;
 }
 header > nav {
     display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 16px;
+    
 }
 
 ul {
@@ -14,11 +26,42 @@ ul {
     text-align: center;
     list-style-type: none;
     padding: 0px;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 5px 20px 5px;
     overflow: hidden;
     position: relative;
 }
 
 img {
     width: 100%;
+}
+
+div.name{
+    display: inline-block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 8px 20px 0px 24px;
+    background: #1A1C18;
+    height: 50px;
+    width: auto;
+    color: #B0B0B0;
+    opacity: 0.8;
+}
+div.name:hover {
+    background: rgb(206, 200, 185);
+    color: black
+}
+div.contribute {
+    opacity: .8;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+div.contribute:hover{
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+    
 }
