@@ -6,9 +6,20 @@
     <ul>
         <% routes.forEach(route => { %>
             <li>
-                <a href="/routes/<%=route._id; %>"> <%=route.name; %> <img src="<%=route.img; %>"> </a>
+                <a href="/routes/<%=route._id; %>"> 
+                    <div class="name">   <h3><%=route.name %></h3> </div>
+                    <img src="<%=route.img[0] %>"> </a>
             </li>
        <% }) %>
+     <div class = "contribute">
+       <!-- <li>
+        <a href="/routes/new">
+    <div class="name"> <h3>Contribute A Route</h3> </div>
+    <img src="https://st3.depositphotos.com/1006778/33179/v/600/depositphotos_331799298-stock-illustration-black-silhouette-bikepacking-classic-road.jpg" id="bicycleImg">
+        </a>
+    </li> -->
+</div>
+
     </ul>
     
 </body>

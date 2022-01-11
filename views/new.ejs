@@ -6,14 +6,16 @@
     
     <h1>New Route</h1>
     <form action="/routes" method="POST">
-        Name: <input type="text" name="name" /><br />
-        Image Link: <input type="text" name="img" /><br />
-        Description: <input type="textarea" name="description" /><br />
-        Days: <input type="text" name="days" /><br />
-        Distance: <input type="text" name="distance" /><br />
-        Contributor: <input type="text" name="contributor" /><br />
-        Additional Info: <input type="text" name="additionalInfo" /><br />
+        Name: <input type="text" name="name" required /><br />
+        Image Link: <input type="text" name="img"  required/><br />
+        Description: <input type="textarea" name="description" required /><br />
+        Difficulty: <input type="text" name="difficulty" required /><br />
+        Days: <input type="text" name="days" required /><br />
+        Distance: <input type="text" name="distance" required /><br />
+        Contributor: <input type="text" name="contributor" required /><br />
+        Additional Info: <input type="text" name="additionalInfo" required /><br />
         <input type="submit" value="Contribute">
     </form>
+
 </body>
 </html>    

@@ -3,10 +3,19 @@
     <%- include('./partials/showhead.ejs') %>
 <body>
     <%- include('./partials/header') %>
-     <h1><%= route.name%></h1>
-
+     <h2><%=route.name %></h2>
+     <strong>Difficulty:</strong><h3><%= route.difficulty%></h3>
+     <strong>Days:</strong><h3><%= route.days%></h3>
+     <strong>Distance:</strong><h3><%= route.distance%></h3>
+     <strong>Description:</strong><p><%= route.description%></p>
+     <strong>Contributor:</strong><h3><%= route.contributor%></h3>
      <% route.img.map(image => { %>
      <img src="<%= image%>">
-     <% }) %> 
+     <% }) %>
+     
+     <form action="/routes/<%= route.id %>?_method=DELETE" method="POST">
+    <input type="submit" value="DELETE" />
+    <a href="/routes/<%=route._id %>/edit">Edit</a>
+</form>
 </body>
 </html>
