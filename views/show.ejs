@@ -2,7 +2,9 @@
 <html lang="en">
     <%- include('./partials/showhead.ejs') %>
 <body>
+    
     <%- include('./partials/showheader') %>
+    <div class="showBody">
      <strong>Difficulty:</strong><h3><%= route.difficulty%></h3>
      <strong>Days:</strong><h3><%= route.days%></h3>
      <strong>Distance:</strong><h3><%= route.distance%></h3>
@@ -22,5 +24,6 @@
     <input type="submit" value="DELETE" /><br />
     <a href="/routes/<%=route._id %>/edit">Edit</a>
 </form>
+</div>
 </body>
 </html>

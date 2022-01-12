@@ -1,20 +1,35 @@
+* {
+    font-family: 'IM Fell Great Primer SC', serif;
+}
 body {
     margin:0px;
+    background-color: #f2f1ee;
+    
     
 }
 
 header {
-    background:url('https://media.istockphoto.com/vectors/touring-bike-cyclist-finish-traveling-on-gps-route-to-the-destination-vector-id1329022813?b=1&k=20&m=1329022813&s=170667a&w=0&h=Wv_FVI9uqhUlIg3cjLI7K_GSHHvEzQGfWc_B_VDE_Q4=');
-    background-size: 280px 200px;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: left; 
+    position: relative;
+    background-color:#285d67;
     padding: 30px;
-    margin: 20px 0px 30px 0px; 
+    margin: 0px 0px 30px 0px; 
     
+}
+header::before {
+    content: '';
+    position: absolute;
+    background:url('https://st2.depositphotos.com/3474539/7893/v/600/depositphotos_78932196-stock-illustration-topographic-map-seamless-pattern-vector.jpg');
+    top: 0px;
+    right: 0px;
+    bottom:0px;
+    left: 0px;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    opacity: 0.1;
 }
     
 header > h1 {
+    position: relative;
     display: flex;
     justify-content: center;
     color: #ac872a;
@@ -22,23 +37,23 @@ header > h1 {
     padding-bottom: 10px;
     margin: 0px 360px 0px 360px;
     
-
-    
 }
 header > h3 {
+    position: relative;
     display: flex;
     justify-content: center;
-    color: #3b647d;
+    color: #6c0e0e;
     margin: 10px;
    
 }
 nav {
     position: absolute;
-    top: 150px;
-    right: 370px;
+    top: 110px;
+    right: 345px;
 }
 nav ul {
     list-style-type: none;
+    
 }
 nav li{
     display: inline-block;
@@ -48,14 +63,29 @@ nav li{
 
 nav a {
     text-decoration: none;
-    color: #242A1F;
+    color: black;
     text-transform:capitalize;
+    position: relative;
+   
 }
+nav a:hover{
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    padding: 8px;
+    
+    
+}
+/* .showBody {
+    background-color: #f2f1ee;
+    padding: 40px;
+    mar
+} */
 
 #name {
     display: flex;
     justify-content: center; 
     text-align: center;
+    white-space: nowrap;
     
 }
 .showUl {
@@ -83,6 +113,7 @@ nav a {
     justify-content: center;
     
 }
+
 
 
 
