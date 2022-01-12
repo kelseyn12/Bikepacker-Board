@@ -6,19 +6,37 @@ header {
     padding: 30px;
     margin: 0px;
     margin-bottom: 5px;
-    background: rgb(225, 230, 233);
+    
     
 }
 header > h1 {
     display: flex;
     justify-content: center;
+    color: #ce9e62;
+    background-color:#1c4b68;
+    margin: 0px 300px 0px 300px ;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+header > h3 {
+    display: flex;
+    justify-content: center;
+    color: #4b6777;
+    margin: 10px;
+   
 }
 header > nav {
     display: flex;
     position: absolute;
     flex-direction: column;
     top: 30px;
-    right: 16px;   
+    right: 16px;
+       
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 
 ul {
@@ -50,8 +68,8 @@ div.name{
     opacity: 0.8;
 }
 div.name:hover {
-    background: rgb(206, 200, 185);
-    color: black
+    background: #4b6777;
+    color: #ce9e62;
 }
 /* div.contribute {
 	-webkit-transform: scale(1);
