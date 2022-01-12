@@ -42,6 +42,8 @@ routesRouter.delete("/:id", (req, res) => {
 });
 //UPDATE//
 routesRouter.put("/:id", (req, res) => {
+    console.log(req.body);
+    req.body.img=req.body.img.split(',');
     // res.send(req.body)
     Route.findByIdAndUpdate(
         req.params.id,
