@@ -1,45 +1,57 @@
 body {
     margin: 0;
+    color: #C9D2D9;
 
 }
 header {
+    background:url('https://media.istockphoto.com/vectors/touring-bike-cyclist-finish-traveling-on-gps-route-to-the-destination-vector-id1329022813?b=1&k=20&m=1329022813&s=170667a&w=0&h=Wv_FVI9uqhUlIg3cjLI7K_GSHHvEzQGfWc_B_VDE_Q4=');
+    background-size: 280px 200px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: left; 
     padding: 30px;
-    margin: 0px;
-    margin-bottom: 5px;
-    
+    margin: 20px 0px 30px 0px; 
     
 }
+    
 header > h1 {
     display: flex;
     justify-content: center;
-    color: #ce9e62;
-    background-color:#1c4b68;
-    margin: 0px 300px 0px 300px ;
-    padding: 20px;
-    border-radius: 20px;
+    color: #ac872a;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin: 0px 360px 0px 360px;
+    
+
     
 }
 header > h3 {
     display: flex;
     justify-content: center;
-    color: #4b6777;
+    color: #3b647d;
     margin: 10px;
    
 }
-header > nav {
-    display: flex;
+nav {
     position: absolute;
-    flex-direction: column;
-    top: 30px;
-    right: 16px;
-       
+    top: 150px;
+    right: 380px;
 }
-a {
-    text-decoration: none;
-    color: black;
+nav ul {
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+
 }
 
-ul {
+a {
+    text-decoration: none;
+    color:#242A1F;
+}
+
+.allRoutes {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 1%;
@@ -68,8 +80,8 @@ div.name{
     opacity: 0.8;
 }
 div.name:hover {
-    background: #4b6777;
-    color: #ce9e62;
+    background: #3b647d;
+    color: #000000;
 }
 /* div.contribute {
 	-webkit-transform: scale(1);

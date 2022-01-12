@@ -9,7 +9,7 @@ module.exports = [
         contributor: 'Bikepacking Routes',
         additionalInfo: 'https://www.bikepackingroots.org/northwoodsroute.html'
     }, {
-        name: 'Staddle and Paddle',
+        name: 'Straddle and Paddle',
         img: ['https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle_main-1200x800.jpg', 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle-minnesota_11.jpg', 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle-minnesota_19.jpg', 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle-minnesota_27.jpg', 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle-minnesota_29.jpg', 'https://bikepacking.com/wp-content/uploads/2017/09/straddle-and-paddle-minnesota_37.jpg'],
         description: 'Traverse through the north shore of Lake Superior and the Boundary Waters Canoe Area.',
         difficulty: '3/10',
