@@ -118,6 +118,78 @@ nav a:hover{
     justify-content: center;
     
 }
+/*ipad*/
+@media only screen and (max-width:1024px) {
+    body {
+        font-size: 10px;
+        align-items: center;
+    }
+    header > h1 {
+        margin-left: -150px;
+        border-bottom: none;
+        margin-bottom: -20px;
+        
+    }
+    header > h3 {
+      display: inline-block;
+      margin-left: 10px;
+      
+      
+      }
+     nav {
+      position: absolute;
+      left: -280px;
+      top: 80px;
+     }
+     nav li {
+         margin-left: -10px;
+     }
+     #allImages {
+         display: grid;
+         grid-template-columns: 50% 50%;
+         margin-right: 370px;
+         
+     }
+} 
+
+/*iphone plus */
+@media only screen and (max-width:736px) {
+    body {
+        font-size: 10px;
+        align-items: center;
+    }
+
+    header > h1 {
+        font-size: 15px;
+        margin-left:75px;
+        flex-wrap: wrap;
+        border-bottom: none;
+        margin-bottom: -20px;
+    }
+    header > h3 {
+        display: inline-block;
+        margin-left: -15px;
+        
+        }
+
+        nav {
+            position: absolute;
+            left: -140px;
+            top: 75px;
+            font-size: 7px;
+           
+            
+           }
+        #delete {
+            font-size: 8px;
+        }
+
+        #allImages {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-right: 200px;
+            
+        }
 
 
 
