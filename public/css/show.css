@@ -48,16 +48,19 @@ header > h3 {
 }
 nav {
     position: absolute;
+    right: 30px;
     top: 110px;
-    right: 345px;
 }
 nav ul {
     list-style-type: none;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
     
 }
 nav li{
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 40px;
 
 }
 
@@ -66,6 +69,7 @@ nav a {
     color: black;
     text-transform:capitalize;
     position: relative;
+    padding: 8px;
    
 }
 nav a:hover{
@@ -75,11 +79,12 @@ nav a:hover{
     
     
 }
-/* .showBody {
-    background-color: #f2f1ee;
-    padding: 40px;
-    mar
-} */
+.showBody {
+    margin:20px;
+}
+.showBody > h2 {
+    color: #6c0e0e;
+}
 
 #name {
     display: flex;
@@ -113,6 +118,7 @@ nav a:hover{
     justify-content: center;
     
 }
+
 
 
 
