@@ -9,6 +9,8 @@ JavaScript
 Express
 Mongoose
 MongoDB
+NodeJs
+Heroku
 GoogleFonts
 
 **Screenshots**
