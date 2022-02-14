@@ -23,3 +23,6 @@ https://midwest-bikepacking.herokuapp.com/
 
 **Future Enhancements**
 User authentication and authorization to enable the user to favorite routes and edit/delete the routes they contributed. 
+
+**Disclaimer**
+Images and routes were provided by bikepacker.com and AdventureCycling. This is used just for learning purposes
