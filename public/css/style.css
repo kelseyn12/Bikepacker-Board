@@ -7,27 +7,29 @@ body {
     background-color: #f2f1ee;
 
 }
+
 header {
     position: relative;
-    background-color:#c5d8b3;
+    background-color: #c5d8b3;
     padding: 30px;
-    margin: 0px 0px 30px 0px; 
-    
+    margin: 0px 0px 30px 0px;
+
 }
+
 header::before {
     content: '';
     position: absolute;
-    background:url('https://st2.depositphotos.com/3474539/7893/v/600/depositphotos_78932196-stock-illustration-topographic-map-seamless-pattern-vector.jpg');
+    background: url('https://st2.depositphotos.com/3474539/7893/v/600/depositphotos_78932196-stock-illustration-topographic-map-seamless-pattern-vector.jpg');
     top: 0px;
     right: 0px;
-    bottom:0px;
+    bottom: 0px;
     left: 0px;
     mix-blend-mode: multiply;
     object-fit: cover;
     opacity: 0.1;
 }
-    
-header > h1 {
+
+header>h1 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -35,42 +37,47 @@ header > h1 {
     border-bottom: 1px solid black;
     padding-bottom: 10px;
     margin: 0px 360px 0px 360px;
-    
 
-    
+
+
 }
-header > h3 {
+
+header>h3 {
     position: relative;
     display: flex;
     justify-content: center;
     color: #3b647d;
     margin: 10px;
-   
+
 }
+
 nav {
     position: absolute;
     right: 30px;
     top: 110px;
-    
+
 }
+
 .navUl {
     list-style-type: none;
     width: 100vw;
     display: flex;
     justify-content: center;
 }
- .navLi{
-     display: inline-block;
-    margin-left: 40px; 
+
+.navLi {
+    display: inline-block;
+    margin-left: 40px;
 
 }
 
 a {
     text-decoration: none;
-    color:#242A1F;
+    color: #242A1F;
     padding: 8px;
 }
-a:hover{
+
+a:hover {
     background-color: rgb(235, 235, 235);
     border-radius: 10px;
     padding: 8px;
@@ -92,7 +99,7 @@ img {
     width: 100%;
 }
 
-div.name{
+div.name {
     display: flex;
     align-items: center;
     position: absolute;
@@ -104,6 +111,7 @@ div.name{
     color: #B0B0B0;
     opacity: 0.8;
 }
+
 div.name:hover {
     background: #3b647d;
     color: #000000;
@@ -112,13 +120,15 @@ div.name:hover {
 
 /* NEW.EJS */
 
-#new{
+#new {
     text-align: center;
 }
+
 p {
     text-align: center;
-    color:rgb(157, 29, 29);
+    color: rgb(157, 29, 29);
 }
+
 #newForm {
     text-align: center;
 }
@@ -131,85 +141,98 @@ label {
     width: 650px;
     line-height: 26px;
     margin-bottom: 10px;
-  }
-  
-  input {
+}
+
+input {
     height: 20px;
     flex: 0 0 200px;
     margin-left: 10px;
-  }
-  #submit {
-      margin: 20px;
-  }
-  @media only screen and (min-width:1300px) {
-      label {
-          align-items: center;
-          text-align: center;
-          width: 55%;
-          
-      }
-  }
-  /*ipad*/
-  @media only screen and (max-width:1024px) {
-      body {
-          font-size: 10px;
-          align-items: center;
-      }
-      header > h1 {
-          margin-left: -200px;
-          border-bottom: none;
-          margin-bottom: -20px;
-          
-      }
-      header > h3 {
+}
+
+#submit {
+    margin: 20px;
+}
+
+@media only screen and (min-width:1300px) {
+    label {
+        align-items: center;
+        text-align: center;
+        width: 55%;
+
+    }
+}
+
+/*ipad*/
+@media only screen and (max-width:1024px) {
+    body {
+        font-size: 10px;
+        align-items: center;
+    }
+
+    header>h1 {
+        margin-left: -200px;
+        border-bottom: none;
+        margin-bottom: -20px;
+
+    }
+
+    header>h3 {
         display: inline-block;
         margin-left: 25px;
-        
-        
-        }
-       nav {
+
+
+    }
+
+    nav {
         position: absolute;
         left: -60px;
         top: 80px;
-       
-        
-       }
-       label {
+
+
+    }
+
+    label {
         align-items: center;
         text-align: center;
         width: 40%;
-        
+
     }
+
     p {
         text-align: left;
     }
+
     #new {
         text-align: left;
         margin-left: 140px;
     }
+
     #submit {
         margin-right: 380px;
     }
-        
-    }
-       
-    
+
+}
+
+
 /*iphone plus */
 @media only screen and (max-width:736px) {
     body {
         font-size: 10px;
         align-items: center;
     }
-    header > h1 {
+
+    header>h1 {
         margin-left: 25px;
         border-bottom: none;
         margin-bottom: -20px;
     }
-    header > h3 {
+
+    header>h3 {
         display: inline-block;
         margin-left: -25px;
-        
-        }
+
+    }
+
     div.name {
         display: flex;
         align-items: center;
@@ -221,27 +244,30 @@ label {
         width: auto;
     }
 
-        nav {
-            position: absolute;
-            left: -60px;
-            top: 100px;
-           
-            
-           }
+    nav {
+        position: absolute;
+        left: -60px;
+        top: 100px;
+
+
+    }
+
     label {
         font-size: 10px;
         text-align: right;
         margin-left: 120px;
         width: 40%;
     }
+
     p {
         text-align: left;
         margin-left: 10px;
         flex-wrap: wrap;
     }
+
     #new {
         margin: 50px;
-        
+
     }
 
 }

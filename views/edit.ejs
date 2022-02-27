@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %>
+<%- include('./partials/head.ejs') %>
+
 <body>
     <%- include('./partials/header') %>
-        <h1>Edit Route</h1>
+    <h1>Edit Route</h1>
     <form action="/routes/<%=route._id%>?_method=PUT" method="POST">
         Name: <input type="text" name="name" value="<%=route.name%>" required /><br />
         Image Link: <input type="text" name="img" value="<%=route.img%>" required /><br />
@@ -15,4 +16,5 @@
         <input type="submit" value="Submit Changes">
     </form>
 </body>
+
 </html>

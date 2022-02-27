@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %>
+<%- include('./partials/head.ejs') %>
+
 <body>
-    <%- include('./partials/header') %>  
-    <ul class= "allRoutes">
+    <%- include('./partials/header') %>
+    <ul class="allRoutes">
         <% routes.forEach(route => { %>
-            <li>
-                <a href="/routes/<%=route._id; %>"> 
-                    <div class="name">   <h3><%=route.name %></h3> </div>
-                    <img src="<%=route.img[0] %>"> </a>
-            </li>
-       <% }) %>
+        <li>
+            <a href="/routes/<%=route._id; %>">
+                <div class="name">
+                    <h3><%=route.name %></h3>
+                </div>
+                <img src="<%=route.img[0] %>">
+            </a>
+        </li>
+        <% }) %>
 
     </ul>
-    
+
 </body>
+
 </html>

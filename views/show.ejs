@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/showhead.ejs') %>
+<%- include('./partials/showhead.ejs') %>
+
 <body>
-    
+
     <%- include('./partials/showheader') %>
     <div class="showBody">
-   <h2><strong>Difficulty:</strong></h2>  <h3><%= route.difficulty%></h3>
-   <h2> <strong>Days:</strong></h2> <h3><%= route.days%></h3>
-   <h2>  <strong>Distance:</strong></h2><h3><%= route.distance%></h3>
-   <h2> <strong>Description:</strong></h2> <p><%= route.description%></p>
-   <h2> <strong>Contributor:</strong></h2> <h3><%= route.contributor%></h3>
-     <h3><a href="<%= route.additionalInfo%>">Additional Info</a></h3>
-     <form action="/routes/<%= route.id %>?_method=DELETE" method="POST">
-        <a href="/routes/<%=route._id %>/edit" id="edit">Edit</a><br /><br />
-        <input type="submit" value="DELETE" id="delete" /><br />
-    </form>
-</div>
-     <ul class ="showUl">
-        <li class= "showImages">
-     <% route.img.map(image => { %>
-     <img src="<%= image%>" id="allImages">
-     <% }) %>
-     </li>
+        <h2><strong>Difficulty:</strong></h2>
+        <h3><%= route.difficulty%></h3>
+        <h2> <strong>Days:</strong></h2>
+        <h3><%= route.days%></h3>
+        <h2> <strong>Distance:</strong></h2>
+        <h3><%= route.distance%></h3>
+        <h2> <strong>Description:</strong></h2>
+        <p><%= route.description%></p>
+        <h2> <strong>Contributor:</strong></h2>
+        <h3><%= route.contributor%></h3>
+        <h3><a href="<%= route.additionalInfo%>">Additional Info</a></h3>
+        <form action="/routes/<%= route.id %>?_method=DELETE" method="POST">
+            <a href="/routes/<%=route._id %>/edit" id="edit">Edit</a><br /><br />
+            <input type="submit" value="DELETE" id="delete" /><br />
+        </form>
+    </div>
+    <ul class="showUl">
+        <li class="showImages">
+            <% route.img.map(image => { %>
+            <img src="<%= image%>" id="allImages">
+            <% }) %>
+        </li>
     </ul>
-     
+
 
 </body>
+
 </html>

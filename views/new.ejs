@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %>
+<%- include('./partials/head.ejs') %>
+
 <body>
-    <%- include('./partials/header') %>
-    
-    <h1 id="new">New Route</h1>
-    <p>Hey! You there! If you add multiple image links, make sure to separate images by a comma and no space</p>
-    <form action="/routes" method="POST" id="newForm">
-   <label> Name: <input type="text" name="name" required /></label>   
-    <label> Image Link: <input type="text" name="img"  required/></label>   
-    <label> Description: <input type="textarea" name="description" required /></label>   
+  <%- include('./partials/header') %>
+
+  <h1 id="new">New Route</h1>
+  <p>Hey! You there! If you add multiple image links, make sure to separate images by a comma and no space</p>
+  <form action="/routes" method="POST" id="newForm">
+    <label> Name: <input type="text" name="name" required /></label>
+    <label> Image Link: <input type="text" name="img" required /></label>
+    <label> Description: <input type="textarea" name="description" required /></label>
     <label> Difficulty: <input type="text" name="difficulty" required /></label>
-    <label> Days: <input type="text" name="days" required /></label>  
-    <label> Distance: <input type="text" name="distance" required /></label> 
-    <label>  Contributor: <input type="text" name="contributor" required /></label>  
-    <label>   Additional Info: <input type="text" name="additionalInfo" required /></label> 
-      <input type="submit" value="Contribute" id="submit"> 
-    </form>
+    <label> Days: <input type="text" name="days" required /></label>
+    <label> Distance: <input type="text" name="distance" required /></label>
+    <label> Contributor: <input type="text" name="contributor" required /></label>
+    <label> Additional Info: <input type="text" name="additionalInfo" required /></label>
+    <input type="submit" value="Contribute" id="submit">
+  </form>
 
 </body>
-</html>    
+
+</html>
